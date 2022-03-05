@@ -1,0 +1,4 @@
+[submodule "hubcraft"]
+	path = hubcraft
+	url = https://github.com/jtschuster/hubcraft.git
+	branch = main
