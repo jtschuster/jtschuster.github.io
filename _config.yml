@@ -1,0 +1,6 @@
+collections:
+  devblogs:
+    output: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
