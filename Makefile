@@ -1,7 +1,14 @@
+OutputFolder = docs
+rmCommand = rmdir /S /Q
+copyFiles =
+copyCommand = xcopy /-I
+
 build: clean
-	pandoc --standalone -f markdown md/page.md  -o html/page.html  --metadata title:Page
-	pandoc --standalone -f markdown md/index.md -o html/index.html --metadata title:"Jackson Schuster"
+	mkdir $(OutputFolder)
+	pandoc --standalone -f markdown md/page.md  -o $(OutputFolder)/page.html  --metadata title:Page
+	pandoc --standalone -f markdown md/index.md -o $(OutputFolder)/index.html --metadata title:"Jackson Schuster"
+	$(copyCommand) .well-known\microsoft-identity-association.json $(OutputFolder)\.well-known\microsoft-identity-association.json
+
 
 clean:
-	rm -f html/page.html
-	rm -f html/index.html
+	$(rmCommand) $(OutputFolder)
