@@ -1,5 +1,5 @@
 ## Github:
-[jtschuster](github.com/jtschuster)
+[jtschuster](https://github.com/jtschuster)
 
 ### Primary work repo:
-[dotnet/runtime](github.com/dotnet/runtime)
+[dotnet/runtime](https://github.com/dotnet/runtime)
